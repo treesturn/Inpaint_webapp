@@ -32,4 +32,16 @@ and then applies an **inpainting diffusion model** to transform or replace the b
     streamlit run app.py
 
 ## Inpaint Diffusion model setup from AWS Sagemaker
+**Do note that using the endpoint from AWS Sagemaker does incur additional cost.**
 
+1. In you AWS Sagemaker studio, navigate to jumpstart and search "Inpaint". Select the Stable Diffusion 2 Inpainting FP16 option
+   
+![Screenshot 2025-03-19 195506](https://github.com/user-attachments/assets/84494a21-82eb-4df2-875c-9a05b491859e)
+
+2. Deploy the model endpoint by clicking "Deploy" on the top right
+ 
+![Screenshot 2025-03-19 195538](https://github.com/user-attachments/assets/f5695cc4-dccc-4d6f-9d75-8e83fac7f277)
+
+2. Deploy the model endpoint on your chosen instance type. Once chosen, click deploy on the bottom right. 
+
+![Screenshot 2025-03-19 195606](https://github.com/user-attachments/assets/7426a940-e82d-4d26-b989-fd310ba7824c)
