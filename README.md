@@ -9,7 +9,9 @@ https://github.com/user-attachments/assets/0cf734a8-7394-4f8f-9ab9-21dba6071794
 
 This project is a web application that uses **Facebook’s Segment Anything Model (SAM)** to segment an input image 
 and then applies an **inpainting diffusion model** to transform or replace the background. The front end is built with 
-**Streamlit**, allowing users to interactively upload images and visualize the results in real-time.
+**Streamlit**, allowing users to interactively upload images and visualize the results in real-time. While the SAM model can run locally on a CPU, 
+the inpainting diffusion model requires GPU acceleration. To address this, the project integrates with an AWS SageMaker endpoint 
+to run the inpainting diffusion model efficiently.
 
 ## Features
 
